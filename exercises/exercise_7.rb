@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+print '> '
+input = $stdin.gets.chomp
+
+Nanaimo = Store.create(name: input)
+Nanaimo.valid?
+puts Nanaimo.errors.messages
